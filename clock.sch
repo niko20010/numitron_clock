@@ -1,0 +1,242 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:vqe24
+LIBS:nodemcu
+LIBS:arduino
+LIBS:clock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1510 1155 965  245 
+U 5816059E
+F0 "Powersupply" 60
+F1 "power.sch" 60
+$EndSheet
+$Sheet
+S 3255 820  645  1455
+U 5816F477
+F0 "MCU" 60
+F1 "MCU.sch" 60
+F2 "LOAD_S_1" O R 3900 1525 60 
+F3 "LOAD_S_10" O R 3900 1400 60 
+F4 "LOAD_M_1" O R 3900 1275 60 
+F5 "LOAD_M_10" O R 3900 1150 60 
+F6 "LOAD_H_1" O R 3900 1025 60 
+F7 "LOAD_H_10" O R 3900 900 60 
+F8 "ALARM_IN" I R 3900 2050 60 
+$EndSheet
+$Sheet
+S 8875 1250 1000 900 
+U 58184686
+F0 "Hours" 60
+F1 "hours.sch" 60
+F2 "CIN" I L 8875 1425 60 
+F3 "COUT" O R 9875 1425 60 
+F4 "LOAD_1s" I L 8875 1650 60 
+F5 "LOAD_10s" I L 8875 1550 60 
+F6 "~ALARM_MATCH" O R 9875 1975 60 
+F7 "CLK" I L 8875 1750 60 
+$EndSheet
+$Sheet
+S 7375 1250 1000 900 
+U 581848EA
+F0 "Minutes" 60
+F1 "minutes.sch" 60
+F2 "CIN" I L 7375 1425 60 
+F3 "COUT" O R 8375 1425 60 
+F4 "LOAD_1s" I L 7375 1650 60 
+F5 "LOAD_10s" I L 7375 1550 60 
+F6 "~ALARM_MATCH" O R 8375 1975 60 
+F7 "CLK" I L 7375 1750 60 
+$EndSheet
+$Sheet
+S 5875 1250 1000 900 
+U 581849C6
+F0 "Seconds" 60
+F1 "seconds.sch" 60
+F2 "CIN" I L 5875 2075 60 
+F3 "COUT" O R 6875 1425 60 
+F4 "LOAD_1s" I L 5875 1650 60 
+F5 "LOAD_10s" I L 5875 1550 60 
+F6 "CLK" I L 5875 1750 60 
+$EndSheet
+Wire Wire Line
+	6875 1425 7375 1425
+Wire Wire Line
+	8375 1425 8875 1425
+Wire Wire Line
+	8475 1975 8375 1975
+Wire Wire Line
+	10000 1975 9875 1975
+$Comp
+L 4011 U?
+U 1 1 5818D963
+P 7875 2700
+F 0 "U?" H 7875 2750 50  0000 C CNN
+F 1 "4011" H 7875 2650 50  0000 C CNN
+F 2 "" H 7875 2700 60  0001 C CNN
+F 3 "" H 7875 2700 60  0001 C CNN
+	1    7875 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5818EA02
+P 5700 2250
+F 0 "#PWR?" H 5700 2000 50  0001 C CNN
+F 1 "GND" H 5700 2100 50  0000 C CNN
+F 2 "" H 5700 2250 50  0000 C CNN
+F 3 "" H 5700 2250 50  0000 C CNN
+	1    5700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2250 5700 2075
+Wire Wire Line
+	5700 2075 5875 2075
+Wire Wire Line
+	3900 1525 4100 1525
+Wire Wire Line
+	4100 1525 4100 1650
+Wire Wire Line
+	4100 1650 5875 1650
+Wire Wire Line
+	3900 1400 4225 1400
+Wire Wire Line
+	4225 1400 4225 1550
+Wire Wire Line
+	4225 1550 5875 1550
+Wire Wire Line
+	3900 1275 5750 1275
+Wire Wire Line
+	5750 1275 5750 1100
+Wire Wire Line
+	5750 1100 7125 1100
+Wire Wire Line
+	7125 1100 7125 1650
+Wire Wire Line
+	7125 1650 7375 1650
+Wire Wire Line
+	7375 1550 7250 1550
+Wire Wire Line
+	7250 1550 7250 975 
+Wire Wire Line
+	7250 975  5625 975 
+Wire Wire Line
+	5625 975  5625 1150
+Wire Wire Line
+	5625 1150 3900 1150
+Wire Wire Line
+	3900 1025 5500 1025
+Wire Wire Line
+	5500 1025 5500 850 
+Wire Wire Line
+	5500 850  8625 850 
+Wire Wire Line
+	8625 850  8625 1650
+Wire Wire Line
+	8625 1650 8875 1650
+Wire Wire Line
+	8875 1550 8750 1550
+Wire Wire Line
+	8750 1550 8750 725 
+Wire Wire Line
+	8750 725  5375 725 
+Wire Wire Line
+	5375 725  5375 900 
+Wire Wire Line
+	5375 900  3900 900 
+Wire Wire Line
+	7275 2700 4000 2700
+Wire Wire Line
+	4000 2700 4000 2050
+Wire Wire Line
+	4000 2050 3900 2050
+Wire Wire Line
+	8475 2600 8475 1975
+Wire Wire Line
+	8475 2800 10000 2800
+Wire Wire Line
+	10000 2800 10000 1975
+Wire Wire Line
+	5875 1750 5000 1750
+Wire Wire Line
+	5000 1750 5000 5500
+Wire Wire Line
+	7375 1750 7100 1750
+Wire Wire Line
+	7100 1750 7100 3250
+Wire Wire Line
+	8875 1750 8675 1750
+Wire Wire Line
+	8675 1750 8675 3250
+Wire Wire Line
+	8675 3250 5000 3250
+Connection ~ 7100 3250
+Wire Wire Line
+	5000 5500 2450 5500
+Connection ~ 5000 3250
+$Sheet
+S 1275 3900 1175 1775
+U 581AA08D
+F0 "RTC+Div" 60
+F1 "rtc.sch" 60
+F2 "CLK_32768" O R 2450 4000 60 
+F3 "CLK_16384" O R 2450 4100 60 
+F4 "CLK_8192" O R 2450 4200 60 
+F5 "CLK_4096" O R 2450 4300 60 
+F6 "CLK_2048" O R 2450 4400 60 
+F7 "CLK_1024" O R 2450 4500 60 
+F8 "CLK_512" O R 2450 4600 60 
+F9 "CLK_256" O R 2450 4700 60 
+F10 "CLK_128" O R 2450 4800 60 
+F11 "CLK_64" O R 2450 4900 60 
+F12 "CLK_32" O R 2450 5000 60 
+F13 "CLK_16" O R 2450 5100 60 
+F14 "CLK_8" O R 2450 5200 60 
+F15 "CLK_4" O R 2450 5300 60 
+F16 "CLK_2" O R 2450 5400 60 
+F17 "CLK_1" O R 2450 5500 60 
+F18 "CLK_0.5" O R 2450 5600 60 
+$EndSheet
+$EndSCHEMATC
