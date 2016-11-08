@@ -29,17 +29,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:vqe24
-LIBS:nodemcu
 LIBS:arduino
 LIBS:d_dual_common_anode
-LIBS:detail
-LIBS:attiny12x2
 LIBS:clock-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""

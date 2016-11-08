@@ -29,11 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:vqe24
-LIBS:nodemcu
 LIBS:arduino
 LIBS:d_dual_common_anode
-LIBS:detail
-LIBS:attiny12x2
 LIBS:clock-cache
 EELAYER 25 0
 EELAYER END
@@ -185,9 +182,9 @@ Wire Wire Line
 Wire Wire Line
 	5875 2075 4225 2075
 Wire Wire Line
-	4225 3325 4225 2075
+	4225 2075 4225 3325
 Wire Wire Line
-	2325 3325 4225 3325
+	4225 3325 2325 3325
 Wire Wire Line
 	6650 2600 8475 2600
 Wire Wire Line

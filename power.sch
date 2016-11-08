@@ -29,17 +29,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:vqe24
-LIBS:nodemcu
 LIBS:arduino
 LIBS:d_dual_common_anode
-LIBS:detail
-LIBS:attiny12x2
 LIBS:clock-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -271,54 +268,21 @@ Wire Wire Line
 Wire Wire Line
 	1725 2100 2600 2100
 Wire Wire Line
-	1725 875  2600 875 
+	1725 875  2800 875 
 Connection ~ 1725 1300
-$Comp
-L D_Small D?
-U 1 1 58220CAF
-P 2700 875
-F 0 "D?" H 2650 955 50  0000 L CNN
-F 1 "1N4148" H 2550 795 50  0000 L CNN
-F 2 "" V 2700 875 50  0000 C CNN
-F 3 "" V 2700 875 50  0000 C CNN
-	1    2700 875 
-	-1   0    0    1   
-$EndComp
 $Comp
 L R_Small R?
 U 1 1 58220EBC
 P 2900 875
 F 0 "R?" H 2930 895 50  0000 L CNN
-F 1 "R_Small" H 2930 835 50  0000 L CNN
+F 1 "4k7" H 2930 835 50  0000 L CNN
 F 2 "" H 2900 875 50  0000 C CNN
 F 3 "" H 2900 875 50  0000 C CNN
 	1    2900 875 
 	0    1    1    0   
 $EndComp
-$Comp
-L ZENERsmall D?
-U 1 1 58220F24
-P 3175 975
-F 0 "D?" H 3175 1075 50  0000 C CNN
-F 1 "5V1" H 3175 875 50  0000 C CNN
-F 2 "" H 3175 975 50  0000 C CNN
-F 3 "" H 3175 975 50  0000 C CNN
-	1    3175 975 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3000 875  3600 875 
-$Comp
-L GND #PWR?
-U 1 1 58221074
-P 3175 1075
-F 0 "#PWR?" H 3175 825 50  0001 C CNN
-F 1 "GND" H 3175 925 50  0000 C CNN
-F 2 "" H 3175 1075 50  0000 C CNN
-F 3 "" H 3175 1075 50  0000 C CNN
-	1    3175 1075
-	1    0    0    -1  
-$EndComp
 $Comp
 L CP C?
 U 1 1 582211A0
@@ -346,7 +310,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 1700 3000 1700
 Connection ~ 3600 1700
-Connection ~ 3175 875 
 Text HLabel 3600 875  2    60   Output ~ 0
 CLK_50
 $EndSCHEMATC
