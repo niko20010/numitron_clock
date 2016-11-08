@@ -1,4 +1,4 @@
-update=Mo 31 Okt 2016 11:38:21 CET
+update=Fr 04 Nov 2016 07:19:59 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,6 @@ LibName29=valves
 LibName30=libs/vqe24
 LibName31=libs/nodemcu
 LibName32=libs/arduino
+LibName33=libs/d_dual_common_anode
+LibName34=libs/detail
+LibName35=libs/attiny12x2
